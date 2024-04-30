@@ -2,59 +2,13 @@
 //CONFIGURAÇÃO DO PHP
 date_default_timezone_set('America/Sao_Paulo');
  
-// CONFIGRAÇÕES DO BANCO ####################
-// define('HOST', 'wsmtec.com.br');
-// define('USER', 'wsmtecco_adm');
-// define('PASS', '@Wsm17911022');
-// define('DBSA', 'wsmtecco_Administrativo');
- 
 
-//define('HOST', '177.234.154.38');
-//define('HOST', 'beta.wsmtec.com.br');
-//define('HOST', 'localhost');
- define('HOST', '177.234.154.38');
- define('USER', 'wsmtecco_adm');
- define('PASS', '@Wsm17911022');
- define('DBSA', 'wsmtecco_Administrativo');
 
  
 
 
-// ##### produção
-
-/*
-// define('HOST', 'wsmtec.com.br');
- define('HOST', 'localhost');
- define('USER', 'wsmtecco_adm');
- define('PASS', '@Wsm17911022');
- define('DBSA', 'wsmtecco_Administrativo');
-
-*/
-
-            // ##### teste
- /*
-  define('HOST', 'wsmtecco_adm.mysql.dbaas.com.br');
-  define('USER', 'wsmtecco_adm');
-  define('PASS', 'w@Wsm17911022');
-  define('DBSA', 'wsmtecco_adm');
- */
-            // ##### teste em locaweb
 
 
-// define('HOST', 'localhost');
-// define('USER', 'wsmtec');
-// define('PASS', '2Pn&VSA9&C');
-// define('DBSA', 'wsmtecco_Administrativo');
-
-
-
-// DEFINE SERVIDOR DE E-MAIL ################
-define('MAILUSER', 'suporte@wsmtec.com.br');
-//define('MAILPASS', '@Suporte010203'); senha antiga
-define('MAILPASS', '@Mudar102030@'); // senha atual
-define('MAILPORT', '587');
-//define('MAILHOST', 'mail.wsmtec.com.br');
-define('MAILHOST', 'ns2.wsmtec.com.br');
 
 // DEFINE IDENTIDADE DO SITE ################
 define('SITENAME', 'WSM Tecnologia em infomática');
