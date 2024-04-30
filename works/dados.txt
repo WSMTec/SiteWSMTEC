@@ -1,0 +1,113 @@
+
+https://webhook.site/#!/view/732aeb21-4247-463a-86ce-142100761314/850840db-0db1-4ed5-be85-f5de06443fb7/1
+
+
+https://webhook.site/#!/view/732aeb21-4247-463a-86ce-142100761314/850840db-0db1-4ed5-be85-f5de06443fb7/1
+
+
+{
+  "id": "or_bYWRkMYuWTJko81G",
+  "code": "R9PCPETLV4",
+  "amount": 2000,
+  "currency": "BRL",
+  "closed": true,
+  "items": [
+    {
+      "id": "oi_g5bp8aF0RC9aO4ym",
+      "type": "product",
+      "description": "PLANO 20",
+      "amount": 2000,
+      "quantity": 1,
+      "status": "active",
+      "created_at": "2024-03-18T20:28:50Z",
+      "updated_at": "2024-03-18T20:28:50Z",
+      "code": "20000"
+    }
+  ],
+  "customer": {
+    "id": "cus_d9qVeERF92smV5vR",
+    "name": "TEste cli",
+    "email": "TEste@drytelecom.com.br",
+    "document": "004610553309",
+    "document_type": "cpf",
+    "type": "individual",
+    "delinquent": false,
+    "created_at": "2024-03-18T20:23:15Z",
+    "updated_at": "2024-03-18T20:28:50Z",
+    "phones": {
+      "mobile_phone": {
+        "country_code": "55",
+        "number": "984627070",
+        "area_code": "11"
+      }
+    }
+  },
+  "status": "pending",
+  "created_at": "2024-03-18T20:28:50Z",
+  "updated_at": "2024-03-18T20:28:50Z",
+  "closed_at": "2024-03-18T20:28:50Z",
+  "charges": [
+    {
+      "id": "ch_bxJnADYCrFnNdyKp",
+      "code": "R9PCPETLV4",
+      "gateway_id": "314362",
+      "amount": 2000,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "pix",
+      "created_at": "2024-03-18T20:28:50Z",
+      "updated_at": "2024-03-18T20:28:50Z",
+      "customer": {
+        "id": "cus_d9qVeERF92smV5vR",
+        "name": "TEste cli",
+        "email": "TEste@drytelecom.com.br",
+        "document": "004610553309",
+        "document_type": "cpf",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2024-03-18T20:23:15Z",
+        "updated_at": "2024-03-18T20:28:50Z",
+        "phones": {
+          "mobile_phone": {
+            "country_code": "55",
+            "number": "984627070",
+            "area_code": "11"
+          }
+        }
+      },
+      "last_transaction": {
+        "pix_provider_tid": "314362",
+        "qr_code": "https://digital.mundipagg.com/pix/",
+        "qr_code_url": "https://api.pagar.me/core/v5/transactions/tran_2d4levMSABiK1Z8V/qrcode?payment_method=pix",
+        "expires_at": "2024-03-18T20:29:00Z",
+        "id": "tran_2d4levMSABiK1Z8V",
+        "transaction_type": "pix",
+        "gateway_id": "314362",
+        "amount": 2000,
+        "status": "waiting_payment",
+        "success": true,
+        "created_at": "2024-03-18T20:28:50Z",
+        "updated_at": "2024-03-18T20:28:50Z",
+        "gateway_response": {},
+        "antifraud_response": {},
+        "metadata": {}
+      }
+    }
+  ]
+}
+
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', 'https://api.pagar.me/core/v5/orders', [
+  'body' => '{"customer":{"phones":{"mobile_phone":{"country_code":"55","area_code":"11","number":"984627070"}},"name":"TEste cli","email":"TEste@drytelecom.com.br","document":"004610553309","document_type":"CPF","type":"individual"},"items":[{"amount":2000,"description":"PLANO 20","quantity":1,"code":"20000"}],"payments":[{"Pix":{"expires_in":10},"payment_method":"pix"}]}',
+  'headers' => [
+    'accept' => 'application/json',
+    'authorization' => 'Basic c2tfdGVzdF9selhQNTZDUTJVRHdrbjFOOg==',
+    'content-type' => 'application/json',
+  ],
+]);
+
+echo $response->getBody();

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>WSM Tecnologia em Informatica - Soluções em Informática!</title>
+        <link>https://www.wsmtec.com.br/sobre</link>
+        <description>Com mais de uma década de história, a WSM Tecnologia é uma empresa especializada no Desenvolvimento e Implantação de Sistemas de Gestão Corporativa, com crescimento expressivo.</description>
+        <language>pt-br</language>
+        <item>
+            <title>WSM Tecnologia em Informatica - Soluções em Informática!</title>
+            <link>https://www.wsmtec.com.br/servicos</link>
+            <pubDate>Wed, 01 Oct 2014 16:19:12 -0300</pubDate>
+            <description>Somos uma empresa especializada no desenvolvimento de soluções voltadas ao ambiente corporativo de pequenas, médias e grandes empresas. Atuamos com um portfólio completo de Soluções em Software e Hardware!</description>
+        </item>
+    </channel>
+</rss>
+  

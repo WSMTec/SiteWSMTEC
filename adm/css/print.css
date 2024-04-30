@@ -1,0 +1,159 @@
+@page{size: auto;}
+* { 
+    background: transparent !important; 
+    color: #000 !important; 
+    text-shadow: none !important; 
+    filter:none !important; 
+    -ms-filter: none !important;  
+    padding:0;
+    margin:0;
+    font-family: arial;
+} 
+.content-box{
+    display: none;
+}
+body {
+    margin:0; 
+    padding:0;
+    line-height: 1.4em;
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+.cod_barra{ 
+    position:absolute;
+    font-size:17px;
+    top:215px;
+    /*                    left:20px;*/
+    left:120px;
+    text-transform: uppercase;
+    font-family: arial;
+}
+.cod_barra_valor{
+    position:absolute;
+    top:194px;	
+    left:500px;
+}
+.cod_barra_num{
+    position:absolute;
+    top:385px;	
+    left:510px;
+}
+.cod_barra_cod{
+    position:absolute;
+    font-size:17px;
+    top:423px;
+    left:285px;
+}
+
+/****************/
+
+.cod_barra_s{ 
+    position:absolute;
+    font-size:17px;
+    top:781px;
+    /*left:20px;*/
+    left:120px;
+    text-transform: uppercase;
+    font-family: arial;
+}
+.cod_barra_valor_s{
+    position:absolute;
+    top:762px;	
+    left:500px;
+}
+.cod_barra_num_s{
+    position:absolute;
+    top:953px;	
+    left:510px;
+}
+.cod_barra_cod_s{
+    position:absolute;
+    font-size:17px;
+    top:980px;
+    left:285px;
+}
+
+.btn_voltar{
+    display:none;	 
+}
+
+/*PRINT*/
+
+@media print {
+    @page{size: auto;}
+    * { 
+        background: transparent !important; 
+        color: #000 !important; 
+        text-shadow: none !important; 
+        filter:none !important; 
+        -ms-filter: none !important;  
+        padding:0;
+        margin:0;
+        font-family: arial;
+    } 
+    .content-box{
+        display: block !important;
+    }
+    body {
+        margin:0; 
+        padding:0;
+        line-height: 1.4em;
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+        color: #000;
+    }
+    .cod_barra{ 
+        position:absolute;
+        font-size:17px;
+        top:215px;
+        /*                    left:20px;*/
+        left:120px;
+        text-transform: uppercase;
+    }
+    .cod_barra_valor{
+        position:absolute;
+        top:194px;	
+        left:500px;
+    }
+    .cod_barra_num{
+        position:absolute;
+        top:385px;	
+        left:510px;
+    }
+    .cod_barra_cod{
+        position:absolute;
+        font-size:17px;
+        top:423px;
+        left:285px;
+    }
+
+    /****************/
+
+    .cod_barra_s{ 
+        position:absolute;
+        font-size:17px;
+        top:781px;
+        /*left:20px;*/
+        left:120px;
+        text-transform: uppercase;
+    }
+    .cod_barra_valor_s{
+        position:absolute;
+        top:762px;	
+        left:500px;
+    }
+    .cod_barra_num_s{
+        position:absolute;
+        top:953px;	
+        left:510px;
+    }
+    .cod_barra_cod_s{
+        position:absolute;
+        font-size:17px;
+        top:980px;
+        left:285px;
+    }
+
+    .btn_voltar{
+        display:none;	 
+    }
+}

@@ -1,0 +1,112 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background: #f8f8f8;
+    /*height: 100vh;*/
+}
+/*MODAL POPUP*/
+
+.modal-fade{
+    display: none;
+    position: fixed;
+    background-color: #0000009e;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    opacity: 0;
+}
+.modal-dialog{
+    /*display: flex;*/ 
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+    opacity: 0;
+}
+.thumb-news-home{
+    position: relative;
+}
+.sorry{
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    color: #ccc;
+}
+.imagem-mascara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-size: auto; */
+    top: 0;
+    left: 0;
+    /* background-position: center; */
+    background: url(../images/icones/play.png) 50% 50% no-repeat;
+}
+.modal-dialog .modal-close {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    color: #fff;
+}
+.div_modal{
+    text-align: center;
+    padding: 2em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+/*CURSO*/
+
+
+.typed-cursor{
+    opacity: 1;
+}
+.typed-cursor.typed-cursor--blink{
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    transition: opacity .25s;
+}
+.typed-cursor.typed-cursor--blink.typed-fade-out{
+    -webkit-animation: 0;
+    animation: 0;
+}
+
+/*FLEX*/
+.css_flex{
+    display: flex;
+}
+.css_flex_wrap{
+    flex-wrap: wrap;
+}
+.css_flex_between{
+    justify-content: space-between;
+}

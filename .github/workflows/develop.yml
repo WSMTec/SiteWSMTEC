@@ -1,0 +1,29 @@
+name: 🚀 Deploy do site para develop
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy-develop:
+    name: 🎉 Deploy para Desenvolvimento
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Baixar código-fonte
+        uses: actions/checkout@v2
+
+      # - name: 🚚 Instalar dependências
+      #   run: composer install --verbose
+
+      - name: 📂 Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.1"
+
+      - name: 📂 Deploy para Desenvolvimento
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          local-dir: "./"
+          server-dir: "./"
+          server: ftp.dev.drytelecom.com.br
+          username: ${{ secrets.FTP_USER_DEV }}
+          password: ${{ secrets.FTP_PASSWORD_DEV }}
